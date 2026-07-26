@@ -3,7 +3,7 @@
   --bg:#0b1220;
   --bg-soft:#111c31;
   --text:#152033;
-  --muted:#546174;
+  --muted:#465469;
   --light:#f5f7fb;
   --surface:#ffffff;
   --accent:#77b7ff;
@@ -66,7 +66,7 @@ a{color:inherit}
 }
 .logo{
   color:var(--white);
-  font-size:clamp(1.65rem,3vw,2.45rem);
+  font-size:clamp(2.15rem,3.8vw,3.35rem);
   line-height:1;
   font-weight:850;
   letter-spacing:-.04em;
@@ -96,10 +96,10 @@ a{color:inherit}
 }
 .eyebrow{margin-bottom:18px}
 h1{
-  max-width:980px;
-  font-size:clamp(2.75rem,6vw,5.6rem);
-  line-height:1.01;
-  letter-spacing:-.055em;
+  max-width:900px;
+  font-size:clamp(2.55rem,4.6vw,4.4rem);
+  line-height:1.06;
+  letter-spacing:-.045em;
   margin-bottom:28px;
 }
 .hero-text{
@@ -126,6 +126,22 @@ h1{
 .primary:hover{background:#9bcaff}
 .secondary{border:1px solid rgba(255,255,255,.26);color:var(--white);background:rgba(255,255,255,.035)}
 .secondary:hover{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.08)}
+.resume-btn{gap:9px}
+.resume-type{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:29px;
+  height:24px;
+  padding:0 6px;
+  border-radius:7px;
+  background:rgba(119,183,255,.18);
+  color:#a9d3ff;
+  font-size:.69rem;
+  font-weight:850;
+  line-height:1;
+  letter-spacing:.05em;
+}
 .section{padding:64px 7%;max-width:1180px;margin:0 auto}
 .section h2{
   max-width:780px;
@@ -163,13 +179,25 @@ h1{
   margin-top:28px;
 }
 .impact-item{
-  padding:17px;
-  border-radius:16px;
-  background:#f7f9fc;
-  border:1px solid var(--border);
+  padding:24px 20px;
+  border-radius:18px;
+  background:linear-gradient(145deg,#f8fbff,#edf5ff);
+  border:1px solid #d5e5f7;
+  text-align:center;
 }
-.impact-item strong{display:block;color:var(--text);font-size:1.02rem}
-.impact-item span{display:block;color:var(--muted);font-size:.83rem;margin-top:2px}
+.impact-item strong{
+  display:block;
+  color:var(--accent-dark);
+  font-size:clamp(1.45rem,2.5vw,2rem);
+  line-height:1.1;
+  letter-spacing:-.035em;
+}
+.impact-item span{display:block;color:var(--muted);font-size:.84rem;margin-top:8px}
+#projects{
+  background:#edf4fc;
+  box-shadow:0 0 0 100vmax #edf4fc;
+  clip-path:inset(0 -100vmax);
+}
 .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .card,.timeline-item,.education-card,.skills-grid>div{
   background:var(--surface);
@@ -180,6 +208,23 @@ h1{
 }
 .card{display:flex;flex-direction:column}
 .card.featured{border-top:4px solid var(--accent-dark)}
+.project-image{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+  padding:6px;
+  margin-bottom:20px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#fff;
+  transition:transform .2s ease,border-color .2s ease;
+}
+.card:hover .project-image{
+  transform:scale(1.012);
+  border-color:#b9d5f4;
+}
 .card h3,.timeline-item h3,.education-card h3,.skills-grid h3{
   margin:11px 0 9px;
   font-size:1.22rem;
@@ -234,9 +279,12 @@ h1{
 .education-card .company{margin-bottom:10px}
 .certification-card{
   grid-column:1/-1;
+  width:min(100%,760px);
+  margin-inline:auto;
   display:flex;
   align-items:center;
-  gap:28px;
+  justify-content:center;
+  gap:32px;
   background:linear-gradient(135deg,#f8fbff,#eef5ff);
 }
 .certification-badge{
@@ -245,7 +293,7 @@ h1{
   object-fit:contain;
   flex:0 0 auto;
 }
-.certification-copy{min-width:0}
+.certification-copy{min-width:0;max-width:430px}
 .certification-card h3{margin-top:11px}
 .contact{
   max-width:1080px;
@@ -292,14 +340,20 @@ footer{text-align:center;padding:28px;color:#6b7280;font-size:.9rem}
   .summary{margin:0 4%;padding:27px 22px;transform:translateY(-34px)}
   .project-grid,.skills-grid,.education-grid{grid-template-columns:1fr}
   .impact-grid{grid-template-columns:1fr 1fr}
-  .certification-card{grid-column:auto;align-items:flex-start;flex-direction:column}
+  .certification-card{
+    grid-column:auto;
+    width:100%;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+  }
   .certification-badge{width:130px;height:130px}
   .role-heading{flex-direction:column;gap:3px}
   .date{white-space:normal}
 }
 @media(max-width:440px){
-  h1{font-size:2.65rem}
-  .logo{font-size:1.9rem}
+  h1{font-size:2.45rem}
+  .logo{font-size:2.2rem}
   .nav-links{font-size:.9rem}
   .impact-grid{grid-template-columns:1fr}
   .project-details div{grid-template-columns:1fr;gap:1px}
