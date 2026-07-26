@@ -232,7 +232,20 @@ h1{
 .education-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .education-card h3{margin-top:0}
 .education-card .company{margin-bottom:10px}
-.certification-card{grid-column:1/-1;background:linear-gradient(135deg,#f8fbff,#eef5ff)}
+.certification-card{
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  gap:28px;
+  background:linear-gradient(135deg,#f8fbff,#eef5ff);
+}
+.certification-badge{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+.certification-copy{min-width:0}
 .certification-card h3{margin-top:11px}
 .contact{
   max-width:1080px;
@@ -279,7 +292,8 @@ footer{text-align:center;padding:28px;color:#6b7280;font-size:.9rem}
   .summary{margin:0 4%;padding:27px 22px;transform:translateY(-34px)}
   .project-grid,.skills-grid,.education-grid{grid-template-columns:1fr}
   .impact-grid{grid-template-columns:1fr 1fr}
-  .certification-card{grid-column:auto}
+  .certification-card{grid-column:auto;align-items:flex-start;flex-direction:column}
+  .certification-badge{width:130px;height:130px}
   .role-heading{flex-direction:column;gap:3px}
   .date{white-space:normal}
 }

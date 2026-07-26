@@ -12,7 +12,7 @@ https://rkolarkar1.github.io
 
 - Professional profile and measurable career highlights
 - Data analysis, data science, cloud and generative AI skills
-- Four project case studies presented by problem, tools and outcome
+- Five project case studies presented by problem, tools and outcome
 - Professional experience, education and AWS certification
 - Downloadable Data Analyst and Data Scientist resumes in PDF and DOCX formats
 

@@ -118,34 +118,35 @@
         </article>
 
         <article class="card">
-          <div class="tag">Explainable AI</div>
-          <h3>Healthcare Sentiment and Medical Device Q&amp;A</h3>
+          <div class="tag">Sentiment Analysis & Explainability</div>
+          <h3>Drug Review Sentiment Analysis with LLaMA-2</h3>
           <p>
-            Built responsible healthcare AI workflows for drug-review sentiment analysis and medical-device
-            question answering, with retrieval grounding, benchmarking and explainability.
+            Built a three-class sentiment workflow for drug reviews, progressing from zero-shot and few-shot
+            prompting to generation-parameter tuning and memory-efficient QLoRA fine-tuning.
           </p>
           <dl class="project-details">
-            <div><dt>Problem</dt><dd>Create useful AI responses while reducing unsupported medical claims.</dd></div>
-            <div><dt>Tools</dt><dd>LLaMA-2 7B, FLAN-T5, Mistral, LoRA/QLoRA, Gradio, LIME, RAG.</dd></div>
-            <div><dt>Outcome</dt><dd>Benchmarked outputs using F1, ROUGE, BLEU and BERTScore with feedback capture.</dd></div>
+            <div><dt>Problem</dt><dd>Classify reviews as positive, neutral or negative and explain predictions.</dd></div>
+            <div><dt>Tools</dt><dd>LLaMA-2 7B, QLoRA, LoRA, 4-bit quantisation, Gradio and LIME.</dd></div>
+            <div><dt>Outcome</dt><dd>Improved recorded accuracy from 1% zero-shot to 67.9% after fine-tuning.</dd></div>
           </dl>
-          <a class="project-link" href="#education">View project background <span aria-hidden="true">↓</span></a>
+          <a class="project-link" href="https://github.com/rkolarkar1/drug-review-sentiment-llama2" target="_blank" rel="noopener">View GitHub Project <span aria-hidden="true">→</span></a>
         </article>
 
         <article class="card">
-          <div class="tag">AWS Serverless & GenAI</div>
-          <h3>Cloud Fun Facts Generator</h3>
+          <div class="tag">Grounded Question Answering</div>
+          <h3>Medical Device Q&amp;A with FLAN-T5 and RAG</h3>
           <p>
-            Created a serverless generative AI application that returns cloud facts through a simple web experience,
-            demonstrating event-driven architecture and managed AWS services.
+            Developed a medical-device question-answering workflow using verified information, parameter-efficient
+            fine-tuning, retrieval grounding and explicit hallucination analysis.
           </p>
           <dl class="project-details">
-            <div><dt>Problem</dt><dd>Deliver generated content without managing application servers.</dd></div>
-            <div><dt>Tools</dt><dd>AWS Amplify, API Gateway, Lambda, DynamoDB, Amazon Bedrock.</dd></div>
-            <div><dt>Outcome</dt><dd>Connected the front end, API, compute, storage and foundation model workflow.</dd></div>
+            <div><dt>Problem</dt><dd>Answer device questions while reducing unsupported or ungrounded responses.</dd></div>
+            <div><dt>Tools</dt><dd>FLAN-T5-Large, QLoRA, Sentence Transformers, FAISS, RAG and Gradio.</dd></div>
+            <div><dt>Outcome</dt><dd>Raised recorded BERTScore F1 from 0.83 zero-shot to 0.90 after fine-tuning.</dd></div>
           </dl>
-          <a class="project-link" href="https://github.com/223743838/aws-projects-portfolio" target="_blank" rel="noopener">View GitHub Project <span aria-hidden="true">→</span></a>
+          <a class="project-link" href="https://github.com/rkolarkar1/medical-device-qa-rag" target="_blank" rel="noopener">View GitHub Project <span aria-hidden="true">→</span></a>
         </article>
+
       </div>
     </section>
 
@@ -279,10 +280,17 @@
           </p>
         </article>
         <article class="education-card certification-card">
-          <div class="tag">Certification</div>
-          <h3>AWS Certified AI Practitioner</h3>
-          <p class="company">Valid until July 2029</p>
-          <p>Foundational expertise across AWS AI services, generative AI, responsible AI, security and governance.</p>
+          <img
+            class="certification-badge"
+            src="assets/images/aws-certified-ai-practitioner.png"
+            alt="AWS Certified AI Practitioner – Foundational badge"
+          >
+          <div class="certification-copy">
+            <div class="tag">Certification</div>
+            <h3>AWS Certified AI Practitioner</h3>
+            <p class="company">Valid until July 2029</p>
+            <p>Foundational expertise across AWS AI services, generative AI, responsible AI, security and governance.</p>
+          </div>
         </article>
       </div>
     </section>
