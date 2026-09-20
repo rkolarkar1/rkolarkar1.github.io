@@ -108,6 +108,29 @@
         <article class="card featured">
   <img
     class="project-image"
+    src="https://github.com/rkolarkar1/card-fraud-detection-analysis/blob/master/outputs/03_fraud_rate_by_merchant.png"
+    alt="Feature ablation testing results for the fraud detection model"
+    loading="lazy"
+  >
+
+  <div class="tag">Card Fraud Detection & Explainability</div>
+          <h3>Card Fraud Detection with XGBoost, SHAP and a Local LLM</h3>
+          <p>
+            Built a fraud detection model on a 15 million row synthetic transaction dataset, paired with a
+            local LLM that turns flagged transactions into plain English analyst explanations using
+            per transaction SHAP attribution.
+          </p>
+          <dl class="project-details">
+            <div><dt>Score transactions as suspicious, and explain why, not just flag them.</dd></div>
+            <div><dt>Tools</dt><dd>Python, XGBoost, SHAP, Qwen2.5-1.5B-Instruct (local LLM via Hugging Face transformers).</dd></div>
+            <div><dt>Outcome</dt><dd>PR-AUC of 0.993, stress tested with feature ablation rather than taken at face value, revealing several features carried redundant signal for the same fraud pattern. Built and tested a real inference path for scoring unlabeled transactions.</dd></div>
+          </dl>
+          <a class="project-link" href="https://github.com/rkolarkar1/card-fraud-detection-analysis" target="_blank" rel="noopener">View GitHub Project <span aria-hidden="true">→</span></a>
+        </article>
+        
+        <article class="card featured">
+  <img
+    class="project-image"
     src="https://raw.githubusercontent.com/rkolarkar1/player-engagement-prediction-segmentation/69c18283c6cabd8f4edefc5d3292341e058cebd2/images/engagement_by_segment.png"
     alt="Player engagement segmentation analysis showing player personas and key engagement drivers"
     loading="lazy"
