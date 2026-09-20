@@ -121,7 +121,7 @@
             per transaction SHAP attribution.
           </p>
           <dl class="project-details">
-            <div><dt>Score transactions as suspicious, and explain why, not just flag them.</dd></div>
+            <div><dt>Problem</dt><dd>Score transactions as suspicious, and explain why, not just flag them.</dd></div>
             <div><dt>Tools</dt><dd>Python, XGBoost, SHAP, Qwen2.5-1.5B-Instruct (local LLM via Hugging Face transformers).</dd></div>
             <div><dt>Outcome</dt><dd>PR-AUC of 0.993, stress tested with feature ablation rather than taken at face value, revealing several features carried redundant signal for the same fraud pattern. Built and tested a real inference path for scoring unlabeled transactions.</dd></div>
           </dl>
